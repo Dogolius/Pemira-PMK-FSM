@@ -24,11 +24,16 @@
       cursor: pointer;
       margin: 0 auto;
       color: #fff;
-      text-decoration: none;
+      }
+      .btn-light {
+        color: #212529;
+        background-color: #f8f9fa;
       }
       .btn-pmk {
         color: #fff;
         background-color: #9223ff;
+        text-decoration: none;
+        text-align: center;
       }
       .d-flex {
         display: flex;
@@ -108,7 +113,8 @@
                                     </p>
 
                                     <div class="d-flex">
-                                      <a href="https://pemirapmkfsm.online" class="btn btn-pmk">Klik disini</a>
+                                      {{-- <a href="https://pemirapmkfsm.online"><button class="btn btn-pmk">Klik disini</button></a> --}}
+                                      <a href="https://pemirapmkfsm.online" style="text-decoration: none; color:#fff" class="btn btn-pmk">Klik disini</a>
                                     </div>
                                     <table class="s-4 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
                                       <tbody>
