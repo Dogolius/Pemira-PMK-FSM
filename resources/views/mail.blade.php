@@ -24,6 +24,10 @@
       cursor: pointer;
       margin: 0 auto;
       }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
       .btn-pmk {
         color: #fff;
         background-color: #9223ff;
