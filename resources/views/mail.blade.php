@@ -112,7 +112,7 @@
                                         Anda hanya dapat memilih pada tanggal dan waktu yang telah ditentukan dengan link berikut: <br>
                                     </p>
 
-                                    <div class="d-flex">
+                                    <div class="d-flex" style="margin-top: 16px">
                                       {{-- <a href="https://pemirapmkfsm.online"><button class="btn btn-pmk">Klik disini</button></a> --}}
                                       <a href="https://pemirapmkfsm.online" style="text-decoration: none; color:#fff" class="btn btn-pmk">Klik disini</a>
                                     </div>
