@@ -23,10 +23,8 @@
       transition: all 0.15s ease;
       cursor: pointer;
       margin: 0 auto;
-      }
-      a {
-        color: #fff;
-        text-decoration: none;
+      color: #fff;
+      text-decoration: none;
       }
       .btn-pmk {
         color: #fff;
