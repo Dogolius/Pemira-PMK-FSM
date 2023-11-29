@@ -14,31 +14,58 @@
     @endif
     <div class="row mt-4 d-flex justify-content-center">
         @can('yetToVote')
-        <div class="col-md-4 m-4 rounded p-1 bg-light">
-            <input name="voter_choose" id="voter_choose" hidden type="text" value="Christina">
-            <button data-bs-toggle="modal" data-bs-target="#modalSatu" class="opac p-0 border-0" type="button">
-                <div class="card border-0" >
-                    <img src="/img/foto_christina.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
-                    <div class="card-body">
-                        <h5 class="card-title">Christina Septiani</h5>
-                        <p class="card-text">Biologi 2021</p>
-                    </div>
+            @if($belum_mulai)
+                <div class="col-md-4 m-4 rounded p-1 bg-light">
+                    <button class="opac p-0 border-0" type="button">
+                        <div class="card border-0" >
+                            <img src="/img/who.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
+                            <div class="card-body">
+                                <h5 class="card-title">???</h5>
+                                <p class="card-text">???</p>
+                            </div>
+                        </div>
+                    </button>
                 </div>
-            </button>
-        </div>
 
 
-        <div class="col-md-4 m-4 rounded p-1 bg-light">
-            <button data-bs-toggle="modal" data-bs-target="#modalDua" class="opac p-0 border-0" type="submit">
-                <div class="card border-0" >
-                    <img src="/img/kotak_kosong.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
-                    <div class="card-body">
-                        <h5 class="card-title">Kotak Kosong</h5>
-                        <p class="card-text">Memilih kotak kosong</p>
-                    </div>
+                <div class="col-md-4 m-4 rounded p-1 bg-light">
+                    <button class="opac p-0 border-0" type="submit">
+                        <div class="card border-0" >
+                            <img src="/img/who.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
+                            <div class="card-body">
+                                <h5 class="card-title">???</h5>
+                                <p class="card-text">???</p>
+                            </div>
+                        </div>
+                    </button>
                 </div>
-            </button>
-        </div>
+            @else
+                <div class="col-md-4 m-4 rounded p-1 bg-light">
+                    <input name="voter_choose" id="voter_choose" hidden type="text" value="Christina">
+                    <button data-bs-toggle="modal" data-bs-target="#modalSatu" class="opac p-0 border-0" type="button">
+                        <div class="card border-0" >
+                            <img src="/img/foto_christina.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
+                            <div class="card-body">
+                                <h5 class="card-title">Christina Septiani</h5>
+                                <p class="card-text">Biologi 2021</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+
+                <div class="col-md-4 m-4 rounded p-1 bg-light">
+                    <button data-bs-toggle="modal" data-bs-target="#modalDua" class="opac p-0 border-0" type="submit">
+                        <div class="card border-0" >
+                            <img src="/img/kotak_kosong.png" class="card-img-top" alt="..." style="height: 300px; object-fit:contain">
+                            <div class="card-body">
+                                <h5 class="card-title">Kotak Kosong</h5>
+                                <p class="card-text">Memilih kotak kosong</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            @endif
         @endcan
 
         @can('alreadyVote')
